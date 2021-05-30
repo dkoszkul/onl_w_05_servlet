@@ -21,6 +21,12 @@ public class Get2 extends HttpServlet {
 
     }
 
+    /**
+     * Tutaj stworzyłem sobie metodę pomocniczą, ponieważ do metody append() nie mogę
+     * dodać tablicy stringów. Przerabiam więc ją na String przy pomocy StringBuildera ;)
+     * @param value
+     * @return
+     */
     private String getValuesAsString(String[] value) {
         StringBuilder builder = new StringBuilder();
         for (String s : value) {
