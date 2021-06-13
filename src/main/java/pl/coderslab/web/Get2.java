@@ -19,6 +19,8 @@ public class Get2 extends HttpServlet {
             response.getWriter().append(key).append(" : ").append(getValuesAsString(value));
         }
 
+        System.out.println("JEstem w serwlecie");
+
     }
 
     /**
